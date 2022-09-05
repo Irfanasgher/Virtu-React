@@ -1,0 +1,123 @@
+$base-font-family: "Poppins", sans-serif;
+$error-color: #e63946;
+
+.align {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  background-image: url(../../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+
+$input-placeholder-color: #7e8ba3;
+
+input {
+  border: 0;
+  font: inherit;
+
+  &::placeholder {
+    color: $input-placeholder-color;
+  }
+}
+
+.form {
+  &__field {
+    margin-bottom: 1rem;
+  }
+
+  input {
+    outline: 0;
+    padding: 0.5rem 1rem;
+
+    &[type="email"],
+    &[type="password"] {
+      width: 100%;
+    }
+  }
+}
+
+$grid-max-width: 25rem;
+$grid-width: 100%;
+
+.grid {
+  //   margin: 0 auto;
+  max-width: $grid-max-width;
+  width: $grid-width;
+}
+
+h2 {
+  font-size: 2.75rem;
+  font-weight: 300;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.register {
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+
+  input {
+    border-radius: 999px;
+    background-color: transparent;
+    text-align: center;
+
+    &[type="email"],
+    &[type="text"],
+    &[type="password"] {
+      background-repeat: no-repeat;
+      background-size: 1.5rem;
+      background-position: 1rem 50%;
+      border: 1px solid #242c37;
+      width: 100%;
+    }
+  }
+  button {
+    &[type="submit"] {
+      height: 50px;
+      background: rgb(101, 140, 195);
+      background: -moz-linear-gradient(
+        90deg,
+        rgba(101, 140, 195, 1) 0%,
+        rgba(56, 117, 169, 1) 35%,
+        rgba(1, 89, 137, 1) 100%
+      );
+      background: -webkit-linear-gradient(
+        90deg,
+        rgba(101, 140, 195, 1) 0%,
+        rgba(56, 117, 169, 1) 35%,
+        rgba(1, 89, 137, 1) 100%
+      );
+      background: linear-gradient(
+        90deg,
+        rgba(101, 140, 195, 1) 0%,
+        rgba(56, 117, 169, 1) 35%,
+        rgba(1, 89, 137, 1) 100%
+      );
+      color: #fff;
+      margin-bottom: 2rem;
+      width: 100%;
+      outline: none;
+      border: 0;
+      border-radius: 100px;
+    }
+  }
+  button.disabled-btn {
+    cursor: not-allowed;
+    // background: rgba($primary-color, 0.8);
+  }
+  .error {
+    color: $error-color;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    text-align: left !important;
+  }
+}

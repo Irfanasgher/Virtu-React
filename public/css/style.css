@@ -1,0 +1,1351 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+/** Menu Css **/
+html {
+  scroll-padding-top: 50px;
+}
+section {
+  scroll-margin-top: 60px;
+}
+.virtu-header {
+  background-color: #ffffff;
+  padding: 15px 0px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+}
+.virtu-header .header-menu .nav-menu li {
+  margin-left: 21px;
+}
+.virtu-header .navbar .header-menu .nav-menu li a {
+  font-size: 16px;
+  color: #005888;
+  font-weight: 400;
+}
+.virtu-header .header-menu .nav-menu li:last-child a {
+  padding-right: 0;
+}
+.close-menu {
+  display: none;
+}
+.virtu-sidebar .header-menu .nav-menu li {
+  margin-left: 21px;
+}
+.virtu-sidebar .header-menu .nav-menu li a {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 13px 0px;
+}
+.virtu-sidebar .header-menu .nav-menu {
+  padding-top: 35px;
+}
+.navbar-toggler {
+  top: 27%;
+}
+.navbar-toggler:focus {
+  outline: none;
+}
+.navbar-toggler span {
+  display: block;
+  background-color: #005888;
+  height: 3px;
+  width: 25px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  position: relative;
+  left: 0;
+  opacity: 1;
+}
+/* .navbar-toggler span:nth-child(1), .navbar-toggler span:nth-child(3) {
+  -webkit-transition: transform .35s ease-in-out;
+  -moz-transition: transform .35s ease-in-out;
+  -o-transition: transform .35s ease-in-out;
+  transition: transform .35s ease-in-out;
+}
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  position: absolute;
+  left: 11px;
+  top: 12px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  opacity: 0.9;
+}
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  height: 12px;
+  visibility: hidden;
+  background-color: transparent;
+}
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  position: absolute;
+  left: 11px;
+  top: 12px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  opacity: 0.9;
+} */
+.sticky-header {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition-duration: 0.5s;
+  transition: position 5s;
+  -webkit-transition: position 5s;
+  -moz-transition: position 5s;
+  -ms-transition: position 5s;
+  -o-transition: position 5s;
+  z-index: 1001;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/** End Of Menu Css **/
+
+/** Banner Css **/
+.banner-bg {
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.banner-info {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 95%);
+  -webkit-transform: translate(-50%, 95%);
+  -moz-transform: translate(-50%, 95%);
+}
+.banner-info h1 {
+  font-size: 79px;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 76px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.banner-info p {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: italic;
+}
+.banner-info button {
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: 400;
+  background-color: #658cc3;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 16px 38px;
+  margin-top: 10px;
+}
+.banner-info button:focus {
+  box-shadow: none;
+}
+.app-signup-form {
+  text-align: center;
+  padding: 0px 70px 40px;
+}
+.app-signup-form img {
+  width: 49%;
+  padding: 0px 15px;
+}
+#betaModal .modal-body {
+  padding: 0;
+}
+#betaModal .app-signup-form form h2 {
+  font-size: 28px;
+  color: #005888;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+#betaModal .app-signup-form form .form-group {
+  margin-bottom: 20px;
+}
+#betaModal .app-signup-form form input {
+  font-size: 18px;
+  color: #333333;
+  font-weight: 400;
+  line-height: 22px;
+  background-color: #e0e8f3;
+  border: none;
+  padding-left: 20px;
+  height: 60px;
+}
+#betaModal .app-signup-form form input::placeholder {
+  color: #658bc3;
+}
+#betaModal .app-signup-form form input:focus {
+  outline: 0;
+  box-shadow: none;
+  background-color: #ecf0f5;
+}
+#betaModal .app-signup-form .country-select {
+  text-align: left;
+}
+#betaModal .app-signup-form .country-select .css-yk16xz-control {
+  font-size: 18px;
+  color: #658bc3;
+  font-weight: 400;
+  background-color: #e0e8f3;
+  border: none !important;
+  padding-left: 20px;
+  height: 60px;
+  text-align: left;
+}
+#betaModal .app-signup-form .country-select .css-yk16xz-control > div {
+  padding: 0px;
+  height: 60px;
+}
+#betaModal .app-signup-form .country-select .css-1pahdxg-control {
+  font-size: 18px;
+  color: #658bc3;
+  font-weight: 400;
+  background-color: #e0e8f3;
+  border: none !important;
+  padding-left: 20px;
+  height: 60px;
+  text-align: left;
+  border: none;
+  box-shadow: none !important;
+}
+.collapsing {
+  -webkit-transition: none;
+  transition: none;
+  display: none;
+}
+#betaModal .app-signup-form .country-select .css-1pahdxg-control > div {
+  padding: 0px;
+  height: 60px;
+}
+#betaModal .app-signup-form .country-select .css-1pahdxg-control {
+  background-color: #e8f0fe;
+}
+#betaModal .app-signup-form .country-select .css-1pahdxg-control:focus {
+  background-color: #e8f0fe;
+}
+#betaModal
+  .app-signup-form
+  .country-select
+  .css-yk16xz-control
+  .css-tlfecz-indicatorContainer
+  svg {
+  fill: #658bc3;
+  width: 30px;
+  height: 30px;
+}
+#betaModal .app-signup-form .country-select .css-g1d714-ValueContainer {
+  height: 60px;
+  padding: 0;
+}
+#betaModal
+  .app-signup-form
+  .country-select
+  .css-g1d714-ValueContainer
+  .css-b8ldur-Input {
+  height: 60px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#betaModal .app-signup-form .country-select .css-1g6gooi {
+  height: 60px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#betaModal .app-signup-form .country-select .css-1wa3eu0-placeholder {
+  color: #658bc3;
+}
+#betaModal .app-signup-form .country-select .css-1uccc91-singleValue {
+  color: #333333;
+}
+#betaModal
+  .app-signup-form
+  .country-select
+  .css-1gtu0rj-indicatorContainer
+  svg {
+  color: #658bc3;
+  fill: #658bc3;
+  width: 30px;
+  height: 30px;
+}
+#betaModal .app-signup-form .country-select .css-1okebmr-indicatorSeparator {
+  background-color: #658bc3;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#betaModal .app-signup-form .country-select .css-yk16xz-control:focus {
+  outline: 0;
+  box-shadow: none;
+  background-color: #ecf0f5;
+}
+#betaModal .app-signup-form form select {
+  font-size: 18px;
+  color: #658bc3;
+  font-weight: 400;
+  line-height: 22px;
+  background-color: #e0e8f3;
+  border: none;
+  padding-left: 20px;
+  height: 60px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../images/arrow-down.png");
+  background-repeat: no-repeat;
+  background-position-x: 97%;
+  background-position-y: 20px;
+  background-size: 20px;
+}
+#betaModal .app-signup-form form select:focus {
+  outline: 0;
+  box-shadow: none;
+  background-color: #ecf0f5;
+}
+#betaModal .app-signup-form form button {
+  font-size: 23px;
+  color: #ffffff;
+  font-weight: 400;
+  background-color: #00aeff;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 9px 45px;
+  margin-top: 25px;
+  height: 55px;
+}
+#betaModal .app-signup-form form button:hover {
+  background-color: #1cb7ff;
+}
+#betaModal .app-signup-form form button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+#betaModal {
+  top: 0;
+}
+#betaModal .modal-content {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+#betaModal .close {
+  opacity: 0.9;
+  color: #707070;
+  padding: 15px 20px;
+}
+.collapsing {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+.virtu-header .navbar .header-menu .nav-menu li a {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+/* #betaModal .close img {
+    width: 60%;
+} */
+#betaModal .close:hover {
+  opacity: 1;
+}
+#betaModal .modal-header {
+  border: none;
+}
+#betaModal .modal-header .btn-close:focus {
+  box-shadow: none;
+}
+#angelModal .modal-header {
+  padding: 0;
+  border: 0;
+}
+#angelModal .modal-header .btn-close {
+  position: absolute;
+  background-color: #0f5a7a;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  right: -15px;
+  top: -20px;
+  padding: 0;
+  opacity: 1;
+  background-image: url("../images/cancel-white.png") !important;
+  background-size: 18px;
+  z-index: 1001;
+}
+#angelModal .modal-header .btn-close:focus {
+  box-shadow: none;
+}
+.thank-you-message {
+  font-size: 24px;
+  color: #005888;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0px;
+  padding: 15px;
+}
+.field-error {
+  font-size: 14px;
+  color: #ff0505;
+}
+.angel-modal {
+  display: flex;
+}
+.be-change {
+  background-color: #f4f0f1;
+}
+.be-change h2 {
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 40px;
+  background-color: #0f5a7a;
+  margin-bottom: 3px;
+  padding: 3px 5px;
+}
+.be-change .see-in {
+  margin-bottom: 40px;
+}
+.be-change p {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 400;
+  line-height: 24px;
+}
+.be-change h4 {
+  font-size: 22px;
+  color: #000000;
+  font-weight: 400;
+  line-height: 26px;
+  border-top: 1px solid #000000;
+  padding-top: 35px;
+  margin-top: 40px;
+}
+.be-change a {
+  font-size: 22px;
+  color: #0f5a7a;
+  font-weight: 400;
+  line-height: 26px;
+}
+.angel-pop-image {
+  height: 100%;
+  background-color: transparent;
+}
+/** End Of Banner Css **/
+
+/** About Virtu Css **/
+.about-virtu {
+  background-color: #f6f9ff;
+  padding: 90px 0px;
+}
+.about-virtu h2 {
+  font-size: 38px;
+  color: #005888;
+  font-weight: 500;
+  line-height: 42px;
+  margin-bottom: 30px;
+}
+.about-virtu p {
+  font-size: 16px;
+  color: #777777;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+  text-align: justify;
+  padding-right: 40px;
+}
+.virtu-about-image {
+  padding-left: 40px;
+}
+.virtu-about-image img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+/** End Of About Virtu Css **/
+
+/** Virtu Features Css **/
+.virtu-features {
+  background-color: #ffffff;
+  padding: 80px 0px;
+}
+.global-citizen {
+  text-align: center;
+}
+.global-citizen img {
+  margin-bottom: 20px;
+}
+.global-citizen h2 {
+  font-size: 24px;
+  color: #005888;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 23px;
+}
+.global-citizen p {
+  font-size: 16px;
+  color: #777777;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0;
+}
+/** End Of Virtu Features Css **/
+
+/** App Showcase Css **/
+.app-showcase {
+  background-color: #f1f1f1;
+  padding: 90px 0px 110px;
+}
+.app-showcase h2 {
+  font-size: 38px;
+  color: #005888;
+  font-weight: 500;
+  line-height: 42px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.app-slider {
+  margin-top: 40px;
+}
+.app-slider .slick-dots {
+  bottom: -35px;
+}
+.app-slider .slick-slide img {
+  width: 100%;
+}
+.app-slider .slick-dots li {
+  margin: 0px 2px;
+}
+.app-slider .slick-dots li button:before {
+  color: #cfcfcf;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  opacity: 1;
+  font-size: 12px;
+}
+.app-slider .slick-dots li.slick-active button:before {
+  color: #116390;
+}
+.app-slider .slick-slide {
+  padding: 25px 15px 25px;
+}
+/* .app-slider  .slick-list {
+    overflow: visible;
+} */
+.app-slider .slick-slide:not(.slick-current) {
+  opacity: 0.7;
+}
+.app-slider .slick-slide.slick-current img {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px 10px;
+}
+/** End Of App Showcase Css **/
+
+/** Footer Css **/
+.virtu-footer {
+  background-color: #ffffff;
+  padding: 80px 0px 50px;
+}
+.signup-beta h2 {
+  font-size: 35px;
+  color: #005888;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.signup-beta h3 {
+  font-size: 20px;
+  color: #333333;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.signup-beta p {
+  font-size: 21px;
+  color: #999999;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 7px;
+  text-align: center;
+}
+.signup-beta p.be-change {
+  font-size: 18px;
+  line-height: 22px;
+}
+.signup-beta p.be-change-mail {
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.signup-form {
+  margin-bottom: 40px !important;
+  margin-top: 40px !important;
+  text-align: center;
+}
+.signup-form input {
+  font-size: 20px;
+  color: #999999;
+  font-weight: 300;
+  line-height: 25px;
+  background-color: #f5f6fa;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  height: 65px;
+  padding-left: 35px;
+  border: 1px solid #eeeff0;
+}
+.signup-form input:focus {
+  box-shadow: none;
+}
+.signup-form input::placeholder {
+  color: #999999;
+}
+.signup-form button {
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 25px;
+  background: rgb(101, 140, 195);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(101, 140, 195, 1) 0%,
+    rgba(56, 117, 169, 1) 35%,
+    rgba(1, 89, 137, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(101, 140, 195, 1) 0%,
+    rgba(56, 117, 169, 1) 35%,
+    rgba(1, 89, 137, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(101, 140, 195, 1) 0%,
+    rgba(56, 117, 169, 1) 35%,
+    rgba(1, 89, 137, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#658cc3",endColorstr="#015989",GradientType=1);
+  border-radius: 50px;
+  padding: 15px 45px;
+  border: none;
+}
+.signup-form button:focus {
+  box-shadow: none;
+}
+.sign-up-loader {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 1001;
+}
+.loader-box {
+  background-color: #ffffff;
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.sign-up-loader img {
+  width: 200px;
+}
+.sign-up-loader P {
+  font-size: 21px;
+  color: #005888;
+  margin: 0;
+}
+.social-icons {
+  display: block;
+}
+.social-icons li {
+  display: inline-block;
+}
+.social-icons li a {
+  font-size: 18px;
+  border: 2px dotted #e6e4eb;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 40px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.social-icons li a i {
+  color: rgb(74, 126, 180);
+  color: -moz-linear-gradient(
+    90deg,
+    rgba(74, 126, 180, 1) 0%,
+    rgba(51, 115, 166, 1) 35%,
+    rgba(8, 93, 141, 1) 100%
+  );
+  color: -webkit-linear-gradient(
+    90deg,
+    rgba(74, 126, 180, 1) 0%,
+    rgba(51, 115, 166, 1) 35%,
+    rgba(8, 93, 141, 1) 100%
+  );
+  color: linear-gradient(
+    90deg,
+    rgba(74, 126, 180, 1) 0%,
+    rgba(51, 115, 166, 1) 35%,
+    rgba(8, 93, 141, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4a7eb4",endColorstr="#085d8d",GradientType=1);
+}
+.social-icons li a:hover {
+  background-color: #f5f6fa;
+}
+.terms {
+  display: block;
+  text-align: right;
+  height: 40px;
+}
+.terms li {
+  display: inline-block;
+  height: 40px;
+}
+.terms li a {
+  font-size: 16px;
+  color: #999999;
+  font-weight: 400;
+  margin-left: 10px;
+  line-height: 40px;
+  vertical-align: bottom;
+}
+.terms li a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+.footer-bottom {
+  padding: 0px 50px;
+}
+.footer-bottom .made-with {
+  font-size: 18px;
+  color: #999999;
+  font-weight: 400;
+}
+.footer-bottom .made-with img {
+  position: relative;
+  top: -2px;
+}
+.footer-bottom .copyright {
+  font-size: 18px;
+  color: #999999;
+  font-weight: 400;
+  text-align: right;
+}
+/** End Of Footer Css **/
+
+/** Media Query Css **/
+@media only screen and (min-width: 1920px) {
+  .banner-info {
+    transform: translate(-50%, 100%);
+    -webkit-transform: translate(-50%, 100%);
+    -moz-transform: translate(-50%, 100%);
+    padding-top: 45px;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1365px) {
+  .banner-info {
+    transform: translate(-50%, 90%);
+    -webkit-transform: translate(-50%, 90%);
+    -moz-transform: translate(-50%, 90%);
+    -ms-transform: translate(-50%, 90%);
+    -o-transform: translate(-50%, 90%);
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .global-citizen h2 {
+    font-size: 19px;
+  }
+  .banner-bg {
+    height: 75vh;
+  }
+  .be-change h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .be-change p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .be-change h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .be-change a {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #angelModal.modal-dialog {
+    max-width: 950px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .footer-bottom .made-with {
+    padding-top: 12px;
+  }
+  .footer-bottom .copyright {
+    padding-top: 12px;
+  }
+  .virtu-header .logo {
+    width: 20%;
+  }
+  #angelModal.modal-dialog {
+    max-width: 1030px;
+  }
+  .desk-hide {
+    display: none;
+  }
+  .angel-pop-image {
+    position: relative;
+    z-index: 1001;
+  }
+  .be-change {
+    background-color: #f4f0f1;
+    margin: 20px 20px 20px -90px;
+    padding: 40px 40px 40px 110px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .virtu-about-image {
+    padding-left: 15px;
+    margin-top: 70px !important;
+  }
+  .virtu-about-image img {
+    width: 75%;
+  }
+  .global-citizen h2 {
+    font-size: 20px;
+    min-height: 60px;
+  }
+  .virtu-sidebar .navbar-collapse.show {
+    width: 60% !important;
+  }
+  .footer-bottom .made-with {
+    padding-top: 3px;
+    line-height: 22px;
+  }
+  .footer-bottom .copyright {
+    padding-top: 3px;
+    line-height: 22px;
+  }
+  .virtu-header .logo {
+    width: 35%;
+  }
+  #angelModal.modal-dialog {
+    max-width: 620px;
+  }
+  .angel-modal {
+    display: block;
+  }
+  .be-change {
+    margin: 20px;
+    margin-top: -25%;
+    padding: 30px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .virtu-header {
+    z-index: 999;
+  }
+  .sticky-header {
+    padding: 5px 0px;
+  }
+  .virtu-sidebar {
+    position: relative;
+    z-index: 1001;
+  }
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url("../images/menu.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+  .virtu-header .logo img {
+    width: 60%;
+  }
+  .mbl-hide {
+    display: none;
+  }
+  #angelModal .modal-header .btn-close {
+    width: 40px;
+    height: 40px;
+    background-size: 15px;
+    background-color: #ffffff;
+    background-image: url("../images/cancel.png") !important;
+    right: 0;
+    top: -10px;
+  }
+  #desk-menu {
+    display: none;
+  }
+  .close-menu {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+  }
+  .virtu-header .toogle-btn {
+    border: 1px solid #005888 !important;
+    font-size: 18px;
+    padding: 4px 10px;
+  }
+  .virtu-header .toogle-btn i {
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 30px;
+  }
+  .virtu-header .header-menu .nav-menu {
+    padding-top: 60px;
+  }
+  .virtu-header .header-menu .nav-menu li a {
+    padding: 13px 0px;
+  }
+  .virtu-sidebar .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 85%;
+    height: 100%;
+    background-color: #658cc3;
+    z-index: 1001;
+    transition: left 3s ease-in-out;
+    -webkit-transition: left 3s ease-in-out;
+    -moz-transition: left 3s ease-in-out;
+    -ms-transition: left 3s ease-in-out;
+    -o-transition: left 3s ease-in-out;
+  }
+  .virtu-sidebar .navbar-collapse.collapsing {
+    height: auto;
+    transition: left 3s ease-in-out;
+    -webkit-transition: left 3s ease-in-out;
+    -o-transition: left 3s ease-in-out;
+    -moz-transition: left 3s ease-in-out;
+    left: -100%;
+    -ms-transition: left 3s ease-in-out;
+  }
+  .virtu-sidebar .navbar-collapse.show {
+    width: 85%;
+    left: 0;
+    transition: left 5s ease-in-out;
+    -webkit-transition: left 5s ease-in-out;
+    -moz-transition: left 5s ease-in-out;
+    -ms-transition: left 5s ease-in-out;
+    -o-transition: left 5s ease-in-out;
+  }
+  .navbar-collapse {
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 20em;
+    height: 100vh;
+    z-index: 1001;
+    box-shadow: 0 0 7px rgb(0 0 0 / 20%);
+  }
+  .navbar-collapse.collapsing {
+    height: 100%;
+    transition: left 3s ease-in-out;
+    -webkit-transition: left 3s ease-in-out;
+    -o-transition: left 3s ease-in-out;
+    -moz-transition: left 3s ease-in-out;
+    left: -20.3em;
+    height: 100vh;
+    -ms-transition: left 3s ease-in-out;
+}
+  .navbar-collapse.show {
+    left: 0;
+    transition: left 3s ease-in-out;
+    -webkit-transition: left 3s ease-in-out;
+    -o-transition: left 3s ease-in-out;
+    -moz-transition: left 3s ease-in-out;
+    -ms-transition: left 3s ease-in-out;
+}
+  .banner-bg {
+    z-index: 999;
+  }
+  .virtu-about-image {
+    padding-left: 15px;
+    margin-top: 100px;
+  }
+  .global-citizen {
+    margin-bottom: 40px;
+  }
+  .noscroll {
+    overflow: hidden;
+  }
+  .app-slider .slick-slide {
+    padding: 20px 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #betaModal.modal-dialog {
+    max-width: 750px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html {
+    scroll-padding-top: 40px;
+  }
+  section {
+    scroll-margin-top: 50px;
+  }
+  .virtu-header .logo {
+    width: 75%;
+  }
+  .virtu-header {
+    padding: 7px 0px;
+  }
+  .sticky-header {
+    padding: 5px 0px;
+  }
+  .sticky-header .logo img {
+    width: 60%;
+  }
+  #betaModal {
+    top: 0;
+  }
+  .app-signup-form {
+    padding: 0px 20px 40px;
+  }
+  #betaModal .app-signup-form form h2 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  #betaModal .app-signup-form form input {
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 15px;
+    height: 50px;
+  }
+  #betaModal .app-signup-form form select {
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 15px;
+    height: 50px;
+    background-position-x: 95%;
+    background-position-y: 16px;
+    background-size: 18px;
+  }
+  #betaModal .app-signup-form form button {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 15px;
+    padding: 7px 35px;
+    height: 50px;
+  }
+  .angel-modal {
+    display: block;
+  }
+  #angelModal {
+    margin: 10px;
+  }
+  .be-change {
+    margin: 20px;
+    padding: 25px;
+    margin-top: -23%;
+  }
+  .be-change h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .be-change p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .be-change h4 {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 20px;
+    margin-top: 25px;
+  }
+  .be-change a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .angel-pop-image .desk-hide {
+    position: relative;
+  }
+  .banner-bg {
+    height: 100%;
+  }
+  .banner-info {
+    transform: inherit;
+    -webkit-transform: inherit;
+    -moz-transform: inherit;
+    position: inherit;
+    padding: 200px 15px 170px;
+  }
+  .banner-info h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .banner-info p {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .banner-info p br {
+    display: none;
+  }
+  .banner-info button {
+    font-size: 16px;
+    padding: 13px 23px;
+  }
+  .app-slider .slick-dots li {
+    margin: 0px 2px;
+  }
+  .app-slider .slick-dots li button:before {
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+  }
+  .about-virtu {
+    padding: 60px 0px;
+  }
+  .about-virtu h2 {
+    font-size: 30px;
+  }
+  .about-virtu p {
+    font-size: 15px;
+    line-height: 25px;
+    padding-right: 0;
+  }
+  .virtu-about-image {
+    padding-left: 15px;
+    margin-top: 40px !important;
+  }
+  .virtu-about-image img {
+    width: 90%;
+  }
+  .virtu-features {
+    padding: 60px 0px;
+  }
+  .global-citizen h2 {
+    font-size: 21px;
+    margin-bottom: 15px;
+  }
+  .global-citizen p {
+    font-size: 15px;
+  }
+  .global-citizen p br {
+    display: none;
+  }
+  .app-showcase {
+    padding: 60px 0px 90px;
+  }
+  .app-showcase h2 {
+    font-size: 30px;
+  }
+  .app-slider {
+    margin-top: 35px;
+  }
+  .virtu-footer {
+    padding: 60px 0px 30px;
+  }
+  .signup-beta h2 {
+    font-size: 27px;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+  .signup-beta p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .signup-beta p.be-change {
+    font-size: 16px;
+  }
+  .signup-form {
+    margin-top: 30px !important;
+  }
+  .signup-form input {
+    width: 100% !important;
+    border-radius: 50px !important;
+    height: 55px;
+    padding-left: 25px;
+    font-size: 17px;
+  }
+  .signup-form .input-group-append {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .signup-form button {
+    margin: 0 auto;
+    font-size: 18px;
+    border-radius: 50px !important;
+    -webkit-border-radius: 50px !important;
+    -moz-border-radius: 50px !important;
+    -ms-border-radius: 50px !important;
+    -o-border-radius: 50px !important;
+  }
+  .social-icons {
+    text-align: center;
+    display: block !important;
+    margin-bottom: 25px !important;
+  }
+  .social-icons li {
+    margin: 5px 0px;
+  }
+  .terms {
+    text-align: center;
+  }
+  .terms li a {
+    font-size: 15px;
+    margin: 0px 5px;
+  }
+  .footer-bottom .made-with {
+    font-size: 16px;
+  }
+  .footer-bottom .copyright {
+    font-size: 16px;
+    text-align: center;
+  }
+  /* #betaModal .app-signup-form .country-select .css-1uccc91-singleValue {
+    top: 50%;
+  } */
+  #betaModal .app-signup-form .country-select .css-yk16xz-control {
+    padding-left: 15px;
+    font-size: 16px;
+    height: 50px;
+  }
+  #betaModal .app-signup-form .country-select .css-g1d714-ValueContainer {
+    height: 50px;
+  }
+  #betaModal
+    .app-signup-form
+    .country-select
+    .css-g1d714-ValueContainer
+    .css-b8ldur-Input {
+    height: 50px;
+  }
+  #betaModal
+    .app-signup-form
+    .country-select
+    .css-yk16xz-control
+    .css-tlfecz-indicatorContainer
+    svg {
+    width: 25px;
+    height: 25px;
+  }
+  #betaModal .app-signup-form .country-select .css-yk16xz-control {
+    height: 50px;
+    padding-left: 15px;
+    font-size: 16px;
+  }
+  #betaModal .app-signup-form .country-select .css-1pahdxg-control {
+    height: 50px;
+    padding-left: 15px;
+    font-size: 16px;
+  }
+  #betaModal .app-signup-form .country-select .css-yk16xz-control > div {
+    height: 50px;
+  }
+  #betaModal .app-signup-form .country-select .css-1pahdxg-control {
+    height: 50px;
+  }
+  #betaModal .app-signup-form .country-select .css-1pahdxg-control > div {
+    height: 50px;
+  }
+  .thank-you-message {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 15px 7px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .be-change {
+    padding: 15px;
+  }
+  .be-change h2 {
+    font-size: 18px;
+  }
+}
+/** End Of Media Query Css **/
